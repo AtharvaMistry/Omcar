@@ -18,7 +18,7 @@ function About() {
             Safe. Healthy. Quality
           </h2>
         </div>
-     
+
         <br />
         <p>Welcome to Omkar Engineering</p>
         <br />
@@ -75,10 +75,10 @@ function About() {
         <h2 className="text-2xl text-black font-medium w-fit border-b">
           Meet Company Owner
         </h2>
-    <div className="border-2 w-fit py-4 px-8 rounded-md mt-5 cursor-pointer  hover:border-black">
+        <div className="border-2 w-fit py-4 px-8 rounded-md mt-5 cursor-pointer  hover:border-black">
           <p className="text-xl">Nitin M. Rathod</p>
           <p>Director</p>
-          <p>+91 9898989898</p>
+          <p>+91 9909291593</p>
         </div>
       </div>
 
