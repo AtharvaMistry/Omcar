@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+   
+      const firebaseConfig = {
+        apiKey: "AIzaSyCetXwc-sYXo5e6DCYebfULpXmZwHj4fmg",
+        authDomain: "omkar-bd59c.firebaseapp.com",
+        projectId: "omkar-bd59c",
+        storageBucket: "omkar-bd59c.appspot.com",
+        messagingSenderId: "952582320765",
+        appId: "1:952582320765:web:251f1cb81d208bf5edb714",
+        measurementId: "G-SZ8FWRL82H",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
