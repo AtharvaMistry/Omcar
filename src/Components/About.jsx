@@ -11,56 +11,61 @@ import Quatation from "./Quatation";
 
 function About() {
   return (
-    <div className="grid px-[15px] mt-[60px] md:px-[40px] lg:px-[60px]">
-      <div className="grid grid-cols-1 place-items-center">
-        <h2 className="text-2xl text-black font-medium w-fit border-b">
-          Safe. Healthy. Quality
-        </h2>
+    <div className="grid px-[15px] mt-[70px] md:px-[40px] lg:px-[60px]">
+      <div className="grid grid-cols-1">
+        <div className="grid place-items-center border-2 border-b-1 border-dotted border-collapse py-3">
+          <h2 className="text-2xl text-black font-medium w-fit md:text-4xl md:font-semibold">
+            Safe. Healthy. Quality
+          </h2>
+        </div>
+     
+        <br />
+        <p>Welcome to Omkar Engineering</p>
         <br />
         <p>
-          When it comes to food, we all seek these three elements. But have you
-          ever wondered, if there are distinctive machineries which help prepare
-          different kinds of foods? And that’s where Ambica Engineering Works
-          come in.
+          <span className="text-[#0074de]"> Nitin M. Rathod</span>, the
+          visionary behind Omkar Engineering, brings over 2 years of invaluable
+          experience in the field. Hailing from Ahmedabad, Nitin passion and
+          expertise have driven the foundation of Omkar Engineering, dedicated
+          to providing top-quality machinery solutions.
         </p>
         <br />
         <p>
-          Established in the early 1974 in Talaja, Ambica Engineering Works is
-          one of the leading & famous firms in manufacturing of Diesel /
-          Kerosene Burner Plants & Food Processing equipment for modern Kitchen
-          Over 47 Years of experience in this field.
+          <span className="text-[#0074de]">
+            Our Current Products At Omkar Engineering
+          </span>
+          , we take pride in our current product offerings, including
+          <span className="text-[#0074de]">
+            {" "}
+            the Milk Mawa (Khova) Machine and the Milk / Basundi Boiling
+            Machine.
+          </span>
+          These machines are a testament to our commitment to delivering
+          excellence in the food processing industry.
         </p>
         <br />
         <p>
-          <span className="text-[#0074de]">Nitin M. Rathod </span>
-          started with the new age of Diesel / Kerosene fire-places. He made an
-          unexpected successful progress & today under the patronage of{" "}
-          <span className="text-[#0074de]">Omcar Eng.</span> Today the company
-          produces wonderful food grade machines useful in dairy Industry,
-          Ice-cream Production, Milk Pulp Performing, Namkeen/ Snacks Making and
-          Wheat Flour varieties. These machines are available in different sizes
-          and models at affordable prices.
-        </p>
-        <br />
-        <p>
-          After conducting many enterprises along with rolling shutter industry,
-          Shree Arvindbhai Rathod has been producing contemporary and affordable
-          machines. Today, <span className="text-[#0074de]">Omcar Eng.</span> is
-          taking steps towards being more eco-friendly initiatives like
-          recycling, and conducting manufacturing best practices.
+          <span className="text-[#0074de]">Future Expansion </span>
+          Our journey is not limited to where we are today. We have ambitious
+          plans for future expansion, aiming to introduce innovative and
+          cutting-edge products to cater to a wider range of needs in the food
+          processing and machinery sector.
         </p>
         <br />
 
         <p>
-          Our machines are designed in a way which doesn’t hinder the quality of
-          food that is made in it. For us the customer always comes first. So
-          quality is a no bargaun area for us.
+          <span className="text-[#0074de]"> Why Choose Us? </span>
+          Experience: With over 2 years of hands-on experience, we have a deep
+          understanding of the industry demands and challenges. Quality: We
+          prioritize quality in everything we do, ensuring that our products
+          meet the highest standards. Innovation: Our commitment to innovation
+          drives us to continuously improve and expand our product line.
         </p>
         <br />
         <p>
-          <span className="text-[#0074de]">Omcar Eng.</span> is spread across
-          25,000 square feet of area with a lush green factory outlet. Our
-          factory is quipped to deliver the best product in a very less time.
+          Join us in our quest to revolutionize the food processing industry. We
+          look forward to serving your needs with the best machinery solutions
+          available in the market.
         </p>
         <br />
       </div>
@@ -70,7 +75,7 @@ function About() {
         <h2 className="text-2xl text-black font-medium w-fit border-b">
           Meet Company Owner
         </h2>
-        <div className="border-2 w-fit py-4 px-8 rounded-md mt-5 cursor-pointer  hover:border-[#0074de]">
+    <div className="border-2 w-fit py-4 px-8 rounded-md mt-5 cursor-pointer  hover:border-black">
           <p className="text-xl">Nitin M. Rathod</p>
           <p>Director</p>
           <p>+91 9898989898</p>
@@ -82,29 +87,29 @@ function About() {
         <h2 className="text-2xl text-black font-medium w-fit border-b">
           Why Our Products?
         </h2>
-        <div className="grid grid-cols-2 gap-5">
-          <div className="border-2 w-fit py-4 px-8 max-w-[300px] flex justify-center items-center flex-col gap-y-3 rounded-md mt-5 cursor-pointer  hover:border-[#0074de]">
+        <div className="grid grid-cols-1 px-5 gap-5 sm:grid-cols-2 sm:px-0">
+          <div className="border w-fit py-4 px-8 max-w-[300px] flex justify-center items-center flex-col gap-y-3 rounded-md mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={ExperienceImg} alt="" className="w-20" />
             </div>
-            <p>WE HAVE 48 YEARS OF EXPERIENCE IN THIS FIELD</p>
+            <p>WE HAVE 2 YEARS OF EXPERIENCE IN THIS FIELD</p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-[#0074de]">
+          <div className="border w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={ServiceImg} alt="" className="w-20" />
             </div>
             <p>SATISFIED AFTER SALES & SERVICES</p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-[#0074de]">
+          <div className="border w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={SalesImg} alt="" className="w-20" />
             </div>
             <p>NUMBERS OF PRODUCTS SALES ACROSS THE INDIA</p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-[#0074de]">
+          <div className="border w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={InfraImg} alt="" className="w-20" />
             </div>
@@ -114,28 +119,28 @@ function About() {
             </p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-[#0074de]">
+          <div className="border w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={TimeImg} alt="" className="w-20" />
             </div>
             <p>HIGHLY RELIABLE AND MAINTENANCE FREE PRODUCTS</p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-[#0074de]">
+          <div className="border w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={StandardImg} alt="" className="w-20" />
             </div>
             <p>STANDARD QUALITY OF THE PRODUCTS</p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-[#0074de]">
+          <div className="border w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer  hover:border-black">
             <div className="border-b w-fit">
               <img src={OperateImg} alt="" className="w-20" />
             </div>
             <p>VERY SIMPLE AND EASY OPERATE TO USE OUR PRODUCTS</p>
           </div>
 
-          <div className="border-2 w-fit py-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer hover:text-[#0074de] hover:border-[#0074de]">
+          <div className="border w-fit p-4 px-8 rounded-md max-w-[300px]  flex justify-center items-center flex-col gap-y-3 mt-5 cursor-pointer hover:border-black">
             <div className="border-b w-fit">
               <img src={DeliveryImg} alt="" className="w-20" />
             </div>

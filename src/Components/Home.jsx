@@ -9,10 +9,11 @@ import ServiceImg from "../assets/support.png";
 import StandardImg from "../assets/checklist.png";
 import TeamImg from "../assets/team.png";
 import CreativityImg from "../assets/creativity.png";
-import ProductImg1 from '../assets/110-SS-G-02-600x600.png';
-import ProductImg2 from '../assets/600-ss-g-600x600.png';
-import ProductImg3 from '../assets/FLOUR-KNEADING-MACHINE-1-1-600x600.png';
-
+// import ProductImg1 from '../assets/110-SS-G-02-600x600.png';
+// import ProductImg2 from '../assets/600-ss-g-600x600.png';
+// import ProductImg3 from '../assets/FLOUR-KNEADING-MACHINE-1-1-600x600.png';
+import Khova1Img from "../assets/products3.png";
+import Khova2Img from "../assets/products2.png";
 
 import "./Header.css";
 import ProductCard from "./ReusablesHome/ProductCard";
@@ -51,17 +52,17 @@ function Home() {
     {
       imageCard: StailnessImg,
       nameCard: "Years of Experience",
-      numberCard: "48",
+      numberCard: "2",
     },
     {
       imageCard: StailnessImg,
       nameCard: "Products",
-      numberCard: "12",
+      numberCard: "2+",
     },
     {
       imageCard: StailnessImg,
       nameCard: "Trained Professionals",
-      numberCard: "20",
+      numberCard: "5",
     },
   ];
 
@@ -69,62 +70,44 @@ function Home() {
 
   const ProductsArray = [
     {
-      productImg: ProductImg1,
+      productImg: Khova1Img,
       productMachine: "Milk Mawa (Khova) Machine",
     },
 
     {
-      productImg: ProductImg2,
+      productImg: Khova2Img,
       productMachine: "Milk / Basundi Boiling Machine",
-    },
-
-    {
-      productImg: ProductImg3,
-      productMachine: "Milk Mawa (Khova) Machine",
-    },
-
-    {
-      productImg: ProductImg1,
-      productMachine: "Flour Kneading Machine",
-    },
-
-    {
-      productImg: ProductImg2,
-      productMachine: "Namkeen Machinee",
-    },
-
-    {
-      productImg: ProductImg3,
-      productMachine: "Nylon Sev Machine",
     },
   ];
   return (
     <>
-      <div className="grid px-[15px] mt-[60px] md:px-[40px] lg:px-[60px]">
-        <div className="grid grid-cols-1 place-items-center">
-          <h2 className="text-2xl text-black font-medium w-fit border-b">
-            We are Specialists
-          </h2>
-          <br />
-          <p>
-            <span className="p-1 text-[#0074de]">
-              The Ambica Engineering Works, Talaja & Bangalore
-            </span>
-            Is One of the leading & famous firms in manufacturing of Diesel /
-            Kersene Burner plants & Food Processing Equipments for Mordern
-            Kitchen Over 42 Years of experience in this field.
+      <div className="grid px-[15px] mt-[70px] md:px-[40px] lg:px-[60px]">
+        <div className="">
+          <div className="grid place-items-center border-2 border-b-1 border-dotted border-collapse py-3">
+            <h2 className="text-2xl text-black font-medium w-fit md:text-4xl md:font-semibold">
+              We are Specialists
+            </h2>
+          </div>
+
+          <p className="border-2 border-dotted border-t-0 text-[#666]  md:text-lg p-3 border-collapse">
+            <span className="p-1 text-[#0074de]">Omcar engineering</span>
+            Is One of the leading & famous firms in manufacturing of Milk Mawa
+            (Khova) Machine & Milk / Basundi Boiling Machine for Mordern Kitchen
+            Over 2 Years of experience in this field.
           </p>
-          <br />
-          <p>
+
+          <p className="text-start border-2 border-dotted text-[#666] border-t-0 md:text-lg p-3 border-collapse">
             The most powerful mechanical revolution has spread far and wide and
             it is increasing very fast. Man has constructed unbelievable things
-            with the help of machines m
+            with the help of machines.
           </p>
         </div>
 
         {/* cards */}
-
-        <div className="grid grid-cols-1 gap-5 mt-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 text-center py-5 border-2 mb-5 border-dotted">
+          <p className="text-2xl font-semibold">Our We Serve</p>
+        </div>
+        <div className="grid grid-cols-1 gap-5  sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <SpecialistCard
               imageCard={SpecialistCardArray[0].imageCard}
@@ -156,8 +139,10 @@ function Home() {
         </div>
 
         {/* brief info about company */}
-
-        <div className="mt-10 backgroundBriefInfo grid grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3">
+        <div className="mt-10 text-center py-5 border-2 mb-5 border-dotted">
+          <p className="text-2xl font-semibold">Our Achievements</p>
+        </div>
+        <div className="grid grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3">
           <div>
             <BriefIntroCard
               imageCard={BriefIntroCardArray[0].imageCard}
@@ -184,8 +169,10 @@ function Home() {
         </div>
 
         {/* Our Products */}
-
-        <div className="grid grid-cols-1  gap-5 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 text-center py-5 border-2 mb-5 border-dotted">
+          <p className="text-2xl font-semibold">Our Products</p>
+        </div>
+        <div className="grid grid-cols-1 gap-5 place-items-center sm:grid-cols-2 ">
           <div className="max-w-[300px]">
             <ProductCard
               productImg={ProductsArray[0].productImg}
@@ -198,49 +185,70 @@ function Home() {
               productMachine={ProductsArray[1].productMachine}
             />
           </div>
-          <div className="max-w-[300px]">
-            <ProductCard
-              productImg={ProductsArray[2].productImg}
-              productMachine={ProductsArray[2].productMachine}
-            />
-          </div>
-
-          <div className="max-w-[300px]">
-            <ProductCard
-              productImg={ProductsArray[3].productImg}
-              productMachine={ProductsArray[3].productMachine}
-            />
-          </div>
-
-          
         </div>
 
         {/* our values */}
-        <div className="grid text-center mt-10">
-          <div className="flex justify-center items-center">
-            <p className="text-4xl font-medium w-fit border-b mb-10">
-              Our Core Values
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-5 place-items-center sm:grid-cols-4">
-            <div className="flex justify-center items-center flex-col gap-y-2 border rounded-md w-fit p-3 min-h-[130px] min-w-[130px] shadow-md hover:-translate-y-1 hover:border-[#0074de] hover:text-[#0074de]">
-              <img src={ServiceImg} alt="" className="w-12" />
-              <p>Great Services</p>
+        <div className="mt-10 text-center py-5 border-2 mb-5 border-dotted">
+          <p className="text-2xl font-semibold"> Our Core Values</p>
+        </div>
+        <div className="grid text-center">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-4 sm:gap-0">
+            <div className="flex justify-between items-center flex-col gap-2 border rounded-l-md w-fit p-4  hover:-translate-y-1 hover:border-black ">
+              <div>
+                <p className="text-start">
+                  &quot;We take pride in delivering exceptional services that
+                  exceed expectations. Our commitment to excellence is reflected
+                  in every aspect of what we do.&quot;
+                </p>
+              </div>
+              <div className="flex justify-start items-start border-t-2 border-dotted pt-2">
+                <img src={ServiceImg} alt="" className="w-8" />
+                <p className="text-[#666]">Great Services</p>
+              </div>
             </div>
 
-            <div className="flex justify-center items-center flex-col gap-y-2 border rounded-md w-fit p-3 shadow-md min-h-[130px] min-w-[130px] hover:-translate-y-1 hover:border-[#0074de] hover:text-[#0074de]">
-              <img src={StandardImg} alt="" className="w-12" />
-              <p>Highest Standards</p>
+            <div className="flex justify-between items-center flex-col gap-2 border w-fit p-4  hover:-translate-y-1 hover:border-black ">
+              <div>
+                <p className="text-start">
+                  &quot; Our unwavering commitment to the highest standards sets
+                  us apart. We adhere to the strictest quality and performance
+                  benchmarks in everything we do, ensuring your satisfaction and
+                  trust in our work.&quot;
+                </p>
+              </div>
+              <div className="flex justify-start items-start border-t-2 border-dotted pt-2">
+                <img src={StandardImg} alt="" className="w-8" />
+                <p className="text-[#666]">Highest Standards</p>
+              </div>
             </div>
 
-            <div className="flex justify-center items-center flex-col gap-y-2 border rounded-md w-fit p-3 min-h-[130px] min-w-[130px] shadow-md hover:-translate-y-1 hover:border-[#0074de] hover:text-[#0074de]">
-              <img src={TeamImg} alt="" className="w-12" />
-              <p>Professional Team</p>
+            <div className="flex justify-between items-center flex-col gap-2 border w-fit p-4  hover:-translate-y-1 hover:border-black ">
+              <div>
+                <p className="text-start">
+                  &quot; With years of experience and a passion for excellence,
+                  we deliver results that reflect our commitment to
+                  professionalism in every project we undertake.&quot;
+                </p>
+              </div>
+              <div className="flex justify-start items-start border-t-2 border-dotted pt-2">
+                <img src={TeamImg} alt="" className="w-8" />
+                <p className="text-[#666]">Professional Team</p>
+              </div>
             </div>
 
-            <div className="flex justify-center items-center flex-col gap-y-2 border rounded-md w-fit p-3 min-h-[130px] min-w-[130px] shadow-md hover:-translate-y-1 hover:border-[#0074de] hover:text-[#0074de]">
-              <img src={CreativityImg} alt="" className="w-12" />
-              <p>Creative Solutions</p>
+            <div className="flex justify-between items-center flex-col gap-2 border w-fit p-4 rounded-r-md hover:-translate-y-1 hover:border-black ">
+              <div>
+                <p className="text-start">
+                  &quot; We specialize in crafting innovative and imaginative
+                  solutions to address your unique needs. Our creative approach
+                  adds a touch of originality to every project, ensuring
+                  tailored, effective, and standout results.&quot;
+                </p>
+              </div>
+              <div className="flex justify-start items-start border-t-2 border-dotted pt-2">
+                <img src={CreativityImg} alt="" className="w-8" />
+                <p className="text-[#666]">Creative Solutions</p>
+              </div>
             </div>
           </div>
         </div>

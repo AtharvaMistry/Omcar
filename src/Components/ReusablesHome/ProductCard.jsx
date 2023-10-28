@@ -9,7 +9,7 @@ function ProductCard({ productImg, productMachine }) {
           <img src={productImg} alt="" className="p-1 w-52" />
         </div>
         <p className="text-2xl font-medium">{productMachine}</p>
-        <button className="text-white w-fit border bg-[#0074de] px-3 py-2 rounded-md hover:text-[#0074de] hover:bg-white">
+        <button className="text-white w-fit border bg-black px-3 py-1 rounded-md  hover:bg-gray-700">
           KNOW MORE
         </button>
       </div>

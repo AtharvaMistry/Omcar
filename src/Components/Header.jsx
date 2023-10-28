@@ -1,4 +1,4 @@
-import { Drawer, Dropdown, Space } from "antd";
+import { Drawer } from "antd";
 import HamMenu from "../assets/menu (1).png";
 import { useState } from "react";
 import "./Header.css";
@@ -16,42 +16,11 @@ function Header() {
   //   functionality for selecting menu
   const [HorizontalMenu, setHorizontalMenu] = useState("Home");
 
-  //   dropdown for product
-  const items = [
-    {
-      key: "1",
-      label: (<Link to="/machine">Milk Mawa (Khova) Machine</Link>),
-    },
-    {
-      key: "2",
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="">
-          Milk / Basundi Boiling Machine
-        </a>
-      ),
-    },
-    {
-      key: "3",
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="">
-          Flour Kneading Machine
-        </a>
-      ),
-    },
-    {
-      key: "4",
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="">
-          Namkeen Machine
-        </a>
-      ),
-    },
-  ];
   return (
     <>
-      <div className="grid grid-cols-2 z-[999] px-[15px] py-[5px] border-b  fixed top-0 right-0 left-0 glassMorphismHeader md:grid-cols-4 md:px-[40px] lg:px-[60px]">
+      <div className="grid grid-cols-2 z-[999] px-[15px] py-[10px] border-b  fixed top-0 right-0 left-0 glassMorphismHeader md:grid-cols-4 md:px-[40px] lg:px-[60px]">
         <div className="flex justify-start items-center md:col-span-1">
-          <p className="text-xl md:text-3xl">Omcar eng.</p>
+          <p className="text-xl font-medium md:text-3xl">OMCAR ENG.</p>
         </div>
         <div
           className="flex justify-end items-center md:hidden"
@@ -61,12 +30,12 @@ function Header() {
         </div>
 
         {/* horizontal menu */}
-        <div className="hidden md:col-span-3 md:flex justify-around items-center">
+        <div className="hidden md:col-span-3 md:flex justify-end items-center gap-4">
           <Link to="/">
             <p
-              className={`w-fit px-3 cursor-pointer text-gray-500 ${
-                HorizontalMenu === "Home" && "text-black border-b border-black"
-              }  hover:text-black`}
+              className={`w-fit px-3 cursor-pointer  font-medium ${
+                HorizontalMenu === "Home" ? "text-[#0074de]" : "text-gray-500"
+              } hover:text-black md:text-lg`}
               onClick={() => setHorizontalMenu("Home")}
             >
               Home
@@ -75,55 +44,35 @@ function Header() {
 
           <Link to="/about">
             <p
-              className={`w-fit px-3 cursor-pointer text-gray-500 ${
-                HorizontalMenu === "About" && "text-black border-b border-black"
-              } hover:text-black`}
+              className={`w-fit px-3 cursor-pointer  font-medium ${
+                HorizontalMenu === "About" ? "text-[#0074de]" : "text-gray-500"
+              } hover:text-black md:text-lg`}
               onClick={() => setHorizontalMenu("About")}
             >
               About Us
             </p>
           </Link>
 
-          <Space direction="vertical">
-            <Space wrap>
-              <Dropdown
-                menu={{
-                  items,
-                }}
-                placement="bottomRight"
-              >
-                <Link to="/product">
-                  <p
-                    className={`w-fit px-3 cursor-pointer text-gray-500 ${
-                      HorizontalMenu === "Product" &&
-                      "text-black border-b border-black"
-                    } hover:text-black`}
-                    onClick={() => setHorizontalMenu("Product")}
-                  >
-                    Our Products
-                  </p>
-                </Link>
-              </Dropdown>
-            </Space>
-          </Space>
-          <Link to="/download">
+          <Link to="/product">
             <p
-              className={`w-fit px-3 cursor-pointer text-gray-500 ${
-                HorizontalMenu === "Download" &&
-                "text-black border-b border-black"
-              } hover:text-black`}
-              onClick={() => setHorizontalMenu("Download")}
+              className={`w-fit px-3 cursor-pointer  font-medium ${
+                HorizontalMenu === "Product"
+                  ? "text-[#0074de]"
+                  : "text-gray-500"
+              } hover:text-black md:text-lg`}
+              onClick={() => setHorizontalMenu("Product")}
             >
-              Download
+              Our Products
             </p>
           </Link>
 
           <Link to="/contact">
             <p
-              className={`w-fit px-3 cursor-pointer text-gray-500 ${
-                HorizontalMenu === "Contact" &&
-                "text-black border-b border-black"
-              } hover:text-black`}
+              className={`w-fit px-3 cursor-pointer  font-medium ${
+                HorizontalMenu === "Contact"
+                  ? "text-[#0074de]"
+                  : "text-gray-500"
+              } hover:text-black md:text-lg`}
               onClick={() => setHorizontalMenu("Contact")}
             >
               Contact us
@@ -134,19 +83,21 @@ function Header() {
         {/* vertical menu */}
         <Drawer placement="right" onClose={onClose} open={open}>
           <div className="grid gap-y-5 text-[18px]">
-            <p className="w-fit px-3 cursor-pointer hover:bg-slate-300">Home</p>
-            <p className="w-fit px-3 cursor-pointer hover:bg-slate-300">
-              About Us
-            </p>
-            <p className="w-fit px-3 cursor-pointer hover:bg-slate-300">
-              Our Products
-            </p>
-            <p className="w-fit px-3 cursor-pointer hover:bg-slate-300">
-              Download
-            </p>
-            <p className="w-fit px-3 cursor-pointer hover:bg-slate-300">
-              Contact us
-            </p>
+            <Link to="/" onClick={() => setOpen(false)}>
+              <p className="w-fit px-3 cursor-pointer  ">Home</p>
+            </Link>
+            <Link to="/about" onClick={() => setOpen(false)}>
+              <p className="w-fit px-3 cursor-pointer  ">About Us</p>
+            </Link>
+            <Link to="/product" onClick={() => setOpen(false)}>
+              <p className="w-fit px-3 cursor-pointer  ">Our Products</p>
+            </Link>
+            {/* <Link to="/download" onClick={() => setOpen(false)}>
+              <p className="w-fit px-3 cursor-pointer  ">Download</p>
+            </Link> */}
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              <p className="w-fit px-3 cursor-pointer  ">Contact us</p>
+            </Link>
           </div>
         </Drawer>
       </div>
