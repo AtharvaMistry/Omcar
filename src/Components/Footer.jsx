@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="grid grid-cols-1 mt-10 pb-5 border-t pt-5  px-[15px] sm:grid-cols-2 gap-5  md:px-[40px] lg:px-[60px]">
       <div className="flex justify-start gap-5 items-center border-b pb-2 sm:border-b-0">
-        <p>Omcar eng.</p>
+        <p>Omkar eng.</p>
         <div className="flex justify-end items-center gap-2">
           <div className="border rounded-full p-2 hover:border-[black]">
             <img src={InstaImg} alt="" className="w-4" />
@@ -34,7 +34,7 @@ function Footer() {
       </div> */}
 
       <div className="grid place-items-center text-center col-span-1 sm:col-span-3 sm:mt-5">
-        <p className="text-xs">@2023 Omcar eng.</p>
+        <p className="text-xs">@2023 Omkar eng.</p>
       </div>
     </div>
   );

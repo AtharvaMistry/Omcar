@@ -90,7 +90,7 @@ function Home() {
           </div>
 
           <p className="border-2 border-dotted border-t-0 text-[#666]  md:text-lg p-3 border-collapse">
-            <span className="p-1 text-[#0074de]">Omcar engineering</span>
+            <span className="p-1 text-[#0074de]">Omkar engineering</span>
             Is One of the leading & famous firms in manufacturing of Milk Mawa
             (Khova) Machine & Milk / Basundi Boiling Machine for Mordern Kitchen
             Over 2 Years of experience in this field.

@@ -20,7 +20,7 @@ function Header() {
     <>
       <div className="grid grid-cols-2 z-[999] px-[15px] py-[10px] border-b  fixed top-0 right-0 left-0 glassMorphismHeader md:grid-cols-4 md:px-[40px] lg:px-[60px]">
         <div className="flex justify-start items-center md:col-span-1">
-          <p className="text-xl font-medium md:text-3xl">OMCAR ENG.</p>
+          <p className="text-xl font-medium md:text-3xl">Omkar ENG.</p>
         </div>
         <div
           className="flex justify-end items-center md:hidden"
